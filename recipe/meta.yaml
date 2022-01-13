@@ -76,7 +76,9 @@ extra:
 #           were managed by bioconda channel. Since the creators of 
 #           seqlike wanted it on conda-forge, we ported all three 
 #           libraries from bioconda channel to conda-forge channel, 
-#           with permission from bioconda-core-team.
+#           with permission from bioconda-core-team. The other two 
+#           libraries (weblogo, python-codon-tables) are dependencies 
+#           of `seqlike`.
 #
 #  TODO: 
 #         1. Remind bioconda team to remove "seqlike" from 
