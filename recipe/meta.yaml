@@ -68,7 +68,7 @@ extra:
   recipe-maintainers:
     - sugatoray
     ## Maintainers from bioconda
-    # - raivivek
+    - raivivek
 
 ## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOIDE PLAUSIBLE CONFUSION IN FUTURE
 #
