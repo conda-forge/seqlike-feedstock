@@ -11,7 +11,7 @@ source:
   sha256: 9bf9f9af1b6ffef2d322b285424f4b89c6622aef1ccd9b88def4dac45d8107b8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -58,6 +58,9 @@ about:
     2. Processing a collection of sequences easily in Python without 
        needing to switch out to a shell.
     3. Convenience APIs to visualize of a collection of sequences.
+
+    PyPI: [https://pypi.org/project/seqlike/](https://pypi.org/project/seqlike/)
+
   doc_url: https://modernatx.github.io/seqlike/
   dev_url: https://github.com/modernatx/seqlike
 
@@ -65,4 +68,31 @@ extra:
   recipe-maintainers:
     - sugatoray
     ## Maintainers from bioconda
-    # - raivivek
+    - raivivek
+
+## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOIDE PLAUSIBLE CONFUSION IN FUTURE
+#
+#  SUMMARY: The three recipes (seqlike, weblogo, python-codon-tables) 
+#           were managed by bioconda channel. Since the creators of 
+#           seqlike wanted it on conda-forge, we ported all three 
+#           libraries from bioconda channel to conda-forge channel, 
+#           with permission from bioconda-core-team. The other two 
+#           libraries (weblogo, python-codon-tables) are dependencies 
+#           of `seqlike`.
+#
+#  TODO: 
+#         1. Remind bioconda team to remove "seqlike" from 
+#            bioconda channel, to complete the transfer of 
+#            "seqlike" from bioconda to conda-forge.
+#
+#         2. Ask the maintainers of bioconda:seqlike whether 
+#            to add them to the maintainers' list here.
+#
+#  See: 
+#    - Comment: 
+#      https://github.com/conda-forge/staged-recipes/pull/17283#issuecomment-1001016875
+#      By: dpryan79 (from bioconda team)
+#    - For more information see this:
+#      https://github.com/conda-forge/staged-recipes/pull/17283#issuecomment-1000523651
+#      
+##-------------------------------------------------------------------------

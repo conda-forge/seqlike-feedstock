@@ -23,6 +23,8 @@ It solves some of the following problems:
    needing to switch out to a shell.
 3. Convenience APIs to visualize of a collection of sequences.
 
+PyPI: [https://pypi.org/project/seqlike/](https://pypi.org/project/seqlike/)
+
 
 Current build status
 ====================
