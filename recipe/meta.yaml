@@ -84,10 +84,10 @@ extra:
 #  TODO: 
 #         1. Remind bioconda team to remove "seqlike" from 
 #            bioconda channel, to complete the transfer of 
-#            "seqlike" from bioconda to conda-forge.
+#            "seqlike" from bioconda to conda-forge. [DONE]
 #
 #         2. Ask the maintainers of bioconda:seqlike whether 
-#            to add them to the maintainers' list here.
+#            to add them to the maintainers' list here. [DONE]
 #
 #  See: 
 #    - Comment: 
