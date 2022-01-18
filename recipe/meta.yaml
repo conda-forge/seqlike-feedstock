@@ -71,7 +71,7 @@ extra:
     ## Maintainers from bioconda
     - raivivek
 
-## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOIDE PLAUSIBLE CONFUSION IN FUTURE
+## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOID PLAUSIBLE CONFUSION IN FUTURE
 #
 #  SUMMARY: The three recipes (seqlike, weblogo, python-codon-tables) 
 #           were managed by bioconda channel. Since the creators of 
