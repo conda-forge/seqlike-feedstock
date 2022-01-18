@@ -11,7 +11,7 @@ source:
   sha256: 9bf9f9af1b6ffef2d322b285424f4b89c6622aef1ccd9b88def4dac45d8107b8
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -67,10 +67,11 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - ericmjl
     ## Maintainers from bioconda
     - raivivek
 
-## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOIDE PLAUSIBLE CONFUSION IN FUTURE
+## NOTE: >> DO NOT REMOVE THIS NOTE TO AVOID PLAUSIBLE CONFUSION IN FUTURE
 #
 #  SUMMARY: The three recipes (seqlike, weblogo, python-codon-tables) 
 #           were managed by bioconda channel. Since the creators of 
@@ -83,10 +84,10 @@ extra:
 #  TODO: 
 #         1. Remind bioconda team to remove "seqlike" from 
 #            bioconda channel, to complete the transfer of 
-#            "seqlike" from bioconda to conda-forge.
+#            "seqlike" from bioconda to conda-forge. [DONE]
 #
 #         2. Ask the maintainers of bioconda:seqlike whether 
-#            to add them to the maintainers' list here.
+#            to add them to the maintainers' list here. [DONE]
 #
 #  See: 
 #    - Comment: 
