@@ -1,5 +1,5 @@
 {% set name = "seqlike" %}
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seqlike-{{ version }}.tar.gz
-  sha256: 9bf9f9af1b6ffef2d322b285424f4b89c6622aef1ccd9b88def4dac45d8107b8
+  sha256: 7865cf6823a572145034f8f069bf4d68e39bfe0ab3313979f3b76e8b0b7a32cb
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -45,7 +45,7 @@ test:
 
 about:
   home: https://github.com/modernatx/seqlike
-  summary: "SeqLike: Flexible Biological Sequence Objects in Python"
+  summary: 'SeqLike: Flexible Biological Sequence Objects in Python'
   license: Apache-2.0
   license_file: LICENSE
   description: |
