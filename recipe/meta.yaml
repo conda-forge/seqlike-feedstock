@@ -35,9 +35,9 @@ requirements:
     - weblogo
     # suggested by auto-tick bot
     - requests
-  run_constrained:
-    # lazy_loader is being added with PR:
-    # https://github.com/conda-forge/staged-recipes/pull/18639
+  # run_constrained:
+  #   # lazy_loader is being added with PR:
+  #   # https://github.com/conda-forge/staged-recipes/pull/18639
     - lazy_loader
 
 test:

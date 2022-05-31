@@ -1,0 +1,4 @@
+channel_sources:
+  # See notes here: 
+  # - https://github.com/conda-forge/seqlike-feedstock/pull/7#issuecomment-1140347680
+  - conda-forge/label/lazy_loader_rc,conda-forge
