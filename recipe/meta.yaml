@@ -34,12 +34,12 @@ requirements:
     - python-codon-tables
     - scikit-learn
     - weblogo
+    # See notes on lazy_loader
+    # - https://github.com/conda-forge/seqlike-feedstock/pull/7#issuecomment-1140347680
+    # - https://github.com/conda-forge/seqlike-feedstock/pull/7#issuecomment-1146537036
+    - lazy_loader
     # suggested by auto-tick bot
     - requests
-  # run_constrained:
-  #   # lazy_loader is being added with PR:
-  #   # https://github.com/conda-forge/staged-recipes/pull/18639
-    - lazy_loader
 
 test:
   imports:
