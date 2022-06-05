@@ -1,5 +1,5 @@
 {% set name = "seqlike" %}
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seqlike-{{ version }}.tar.gz
-  sha256: 7865cf6823a572145034f8f069bf4d68e39bfe0ab3313979f3b76e8b0b7a32cb
+  sha256: 8ffef4c547d8803b6ebf69fd0669773c1e08b1e010015a1196619addcbca25dc
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.6
     - requests
+    - lazy_loader
   run:
     - python >=3.6
     - biopython
@@ -33,6 +34,12 @@ requirements:
     - python-codon-tables
     - scikit-learn
     - weblogo
+    # See notes on lazy_loader
+    # - https://github.com/conda-forge/seqlike-feedstock/pull/7#issuecomment-1140347680
+    # - https://github.com/conda-forge/seqlike-feedstock/pull/7#issuecomment-1146537036
+    - lazy_loader
+    # suggested by auto-tick bot
+    - requests
 
 test:
   imports:
