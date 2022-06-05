@@ -1,5 +1,5 @@
 {% set name = "seqlike" %}
-{% set version = "1.1.8" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seqlike-{{ version }}.tar.gz
-  sha256: 8ffef4c547d8803b6ebf69fd0669773c1e08b1e010015a1196619addcbca25dc
+  sha256: 539dffe513e63092f3b3f9110d0fbcd71b02445a0c9da15516fa616fd2fe3efa
 
 build:
   number: 0
