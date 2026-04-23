@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seqlike-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seqlike-{{ version }}.tar.gz
   sha256: 8bc70f80a02488863950b99be916e07a01118a29f7d89e1ff15a7dc39147f178
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - requests
     - lazy_loader
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - biopython
     - multipledispatch
     - numpy
@@ -49,6 +49,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/modernatx/seqlike
